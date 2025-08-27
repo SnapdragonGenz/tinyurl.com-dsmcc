@@ -1,0 +1,100 @@
+PROBLEM STATEMENT: Style a webpage using CSS ,apply colors, fonts and layouts
+HTML PART
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Styled Webpage with External CSS</title>
+ <link rel="stylesheet" href="C:\Users\sreed\OneDrive\Desktop\Mount CaramelCollege\14
+July Lab\Program10.css">
+ <!-- External CSS linked here -->
+</head>
+<body>
+ <header>
+ <h1>My Styled Webpage</h1>
+ <p>Welcome Your Name</p>
+ </header>
+ <nav>
+ <a href="#">Home</a>
+ <a href="#">About</a>
+ <a href="#">Services</a>
+ <a href="#">Contact</a>
+ </nav>
+ <div class="container">
+ <div class="main-content">
+ <h2>Main Content Area</h2>
+ <p>This is where the main content goes. It is styled with padding, margin, and
+background color.</p>
+ <b>HTML</b>
+ <p>HTML stands for HyperText Markup Language. It is not a programming language,
+but a markup language used
+ to create the structure and content of a webpage. It tells the web browser how to
+display text, links,
+ images, and other forms of multimedia on a webpage. </p>
+ </div>
+ <div class="sidebar">
+ <h3>Sidebar</h3>
+ <p>This is the sidebar area with different background color and smaller width.</p>
+ </div>
+ </div>
+ <footer>
+ <p>&copy; 2025 My Styled Webpage</p>
+ </footer>
+</body>
+</html>
+CSS PART
+/* General body styling */
+body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f2f2f2;
+ color: #333;
+}
+/* Header styling */
+header {
+ background-color: #4CAF50;
+ color: white;
+ padding: 20px;
+ text-align: center;
+}
+/* Navigation bar */
+nav {
+ background-color: #333;
+ display: flex;
+ justify-content: center;
+}
+nav a {
+ color: white;
+ padding: 14px 20px;
+ text-decoration: none;
+}
+nav a:hover {
+ background-color: #ddd;
+ color: black;
+}
+/* Main content layout using flex */
+.container {
+ display: flex;
+ padding: 20px;
+}
+.main-content {
+ flex: 3;
+ padding: 20px;
+ background-color: white;
+ margin-right: 10px;
+}
+.sidebar {
+ flex: 1;
+ padding: 20px;
+ background-color: #e0e0e0;
+}
+/* Footer styling */
+footer {
+ background-color: #4CAF50;
+ color: white;
+ text-align: center;
+ padding: 10px;
+ position: relative;
+ bottom: 0;
+ width: 100%;
+}
